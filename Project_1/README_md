@@ -9,9 +9,6 @@ This project focuses on predicting cell types in Peripheral Blood Mononuclear Ce
 4. [Model Training and Evaluation](#model-training-and-evaluation)
 5. [Results](#results)
 6. [Conclusion](#conclusion)
-7. [Installation](#installation)
-8. [Usage](#usage)
-9. [License](#license)
 
 ## Introduction
 The dataset consists of gene expression data for PBMC cells, with each cell labeled by its type. The goal is to classify cells into 8 distinct types using machine learning models. We explore dimensionality reduction techniques (PCA and UMAP) and evaluate three models: Support Vector Machine (SVM), Random Forest (RF), and XGBoost.
@@ -46,6 +43,13 @@ Three models are trained and evaluated:
   - SVM: Accuracy = 0.9520
   - XGBoost: Accuracy = 0.9343
   - Random Forest: Accuracy = 0.9242
+
+## Directory Structure
+Project_1/
+|—— data/             # Dataset files
+|—— code/             # jupyter notebook code
+|—— results/          # Performance metrics and plots
+|—— READ.ME           # Project documentation
 
 
 ## Conclusion
