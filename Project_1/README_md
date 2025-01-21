@@ -47,7 +47,11 @@ Three models are trained and evaluated:
   - XGBoost: Accuracy = 0.9343
   - Random Forest: Accuracy = 0.9242
 
+
 ## Conclusion
 - **Dimensionality Reduction**: PCA outperforms UMAP for this dataset, and combining PCA with UMAP improves clustering performance.
 - **Model Performance**: SVM performs best on the test set, while XGBoost and Random Forest show better performance in cross-validation.
 - **Feature Importance**: Key genes like CTSW, NKG7, S100A8, and TYROBP are identified as important for cell type classification.
+
+
+
