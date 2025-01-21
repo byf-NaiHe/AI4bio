@@ -1,0 +1,53 @@
+# PBMC Cell Type Prediction
+
+This project focuses on predicting cell types in Peripheral Blood Mononuclear Cells (PBMC) based on gene expression data. The dataset contains gene expression profiles for various cell types, and the goal is to classify these cells into their respective types using machine learning models.
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Data Preprocessing](#data-preprocessing)
+3. [Dimensionality Reduction](#dimensionality-reduction)
+4. [Model Training and Evaluation](#model-training-and-evaluation)
+5. [Results](#results)
+6. [Conclusion](#conclusion)
+7. [Installation](#installation)
+8. [Usage](#usage)
+9. [License](#license)
+
+## Introduction
+The dataset consists of gene expression data for PBMC cells, with each cell labeled by its type. The goal is to classify cells into 8 distinct types using machine learning models. We explore dimensionality reduction techniques (PCA and UMAP) and evaluate three models: Support Vector Machine (SVM), Random Forest (RF), and XGBoost.
+
+## Data Preprocessing
+- **Data Loading**: The dataset is loaded from a CSV file.
+- **Standardization**: Gene expression data is standardized using `StandardScaler`.
+- **Class Imbalance**: The dataset is imbalanced, so oversampling is applied to balance the classes.
+
+## Dimensionality Reduction
+- **UMAP**: Uniform Manifold Approximation and Projection (UMAP) is used for non-linear dimensionality reduction.
+- **PCA**: Principal Component Analysis (PCA) is used for linear dimensionality reduction.
+- **Combined Approach**: PCA is applied first to reduce noise, followed by UMAP for better clustering.
+
+## Model Training and Evaluation
+Three models are trained and evaluated:
+1. **Support Vector Machine (SVM)**:
+   - Kernel: RBF
+   - Accuracy: 0.9520
+2. **Random Forest (RF)**:
+   - Number of Trees: 100
+   - Accuracy: 0.9242
+3. **XGBoost**:
+   - Number of Trees: 100
+   - Accuracy: 0.9343
+
+## Results
+- **UMAP Clustering**: ARI = 0.08
+- **PCA Clustering**: ARI = 0.302
+- **PCA + UMAP Clustering**: ARI = 0.18
+- **Model Performance**:
+  - SVM: Accuracy = 0.9520
+  - XGBoost: Accuracy = 0.9343
+  - Random Forest: Accuracy = 0.9242
+
+## Conclusion
+- **Dimensionality Reduction**: PCA outperforms UMAP for this dataset, and combining PCA with UMAP improves clustering performance.
+- **Model Performance**: SVM performs best on the test set, while XGBoost and Random Forest show better performance in cross-validation.
+- **Feature Importance**: Key genes like CTSW, NKG7, S100A8, and TYROBP are identified as important for cell type classification.
