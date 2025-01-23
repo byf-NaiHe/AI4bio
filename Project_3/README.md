@@ -1,20 +1,6 @@
-# forBreast Cancer Ultrasound Image Classification and Segmentation
+# Breast Cancer Ultrasound Image Classification and Segmentation
 
-This repository contains code for classifying and segmenting breast cancer ultrasound images using Vision Transformer (ViT) and Mask2Former models. The dataset used is the Breast Ultrasound Dataset, which includes images categorized into three classes: normal, benign, and malignant.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Dataset](#dataset)
-- [Model Architecture](#model-architecture)
-  - [Vision Transformer (ViT)](#vision-transformer-vit)
-  - [Mask2Former](#mask2former)
-- [Data Processing](#data-processing)
-- [Training](#training)
-- [Testing](#testing)
-- [Results](#results)
-- [Additional Notes](#additional-notes)
-- [References](#references)
+This Project contains code for classifying and segmenting breast cancer ultrasound images using Vision Transformer (ViT) and Mask2Former models. The dataset used is the Breast Ultrasound Dataset, which includes images categorized into three classes: normal, benign, and malignant.
 
 ## Introduction
 
